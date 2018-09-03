@@ -7,6 +7,8 @@ label ch1:
     $ mc = renpy.input("Please insert your name")
     
     $ mc = mc.strip()
+
+    #scene mc bedroom
     
     "I woke up with a yawn"
     
@@ -14,346 +16,184 @@ label ch1:
     
     "Alone... I wonder when my waifu will be alive"
     
-    m "[mc],I made your breakfast."
+    m "[mc], I made you breakfast."
     
-    mc "Okay,mom."
+    mc "Okay, Mom."
     
     "I went out with my everyday school uniform."
     
     "I stared at my room, it looks like my collection of anime and vocaloids is good enough for bragging."
     
-    "I shook my head before combing my hair"
+    "I shook my head before combing my hair."
+
+    #scene dinning room (mc home)
     
-    "I went down.In the dinner room there is a girl with long straight black hair, with dignified aura and a mature body."
+    "I went downstairs. In the dinning room there's a girl with long straight black hair, with a dignified aura and a mature body."
     
     r "[mc]!"
     
-    "She is my step-sister who is well-known, blablabla prodigy. Blablabla your beautiful student council president"
+    "She is my step-sister who is popular, blahblahblah a prodigy, and blahblahblah our beautiful student council president."
      
     "I wonder what I should become..."
     menu:
-        "Either way, I decide that I'll..."
+        "Either way, I think that I'll be..."
         
-        "Your cute Otouto Main Character!": #choice 1
+        "Your cute Otouto Main Character!": # 1
             
-            jump retard1
+            jump sub1
         
-        "Whose IDEA WAS IT TO PUT THAT OTHER CHOICE THERE?": #choice 2
+        "Whose IDEA WAS IT TO PUT THAT OTHER CHOICE THERE": # 2
             
-            jump notretard1
-            
-            
-label retard1:
-    "I will rely on my beautiful Rina-nee!"
+            jump route1
+  
+label route1:
+    "Anyway, my mind aside."
     
-    "And this visual novel will become about me with her!"
-    
-    "I wonder should I tell Author?"
-
-    jump done1
-
-label notretard1:
-    
-    jump done1
-    
-    
-label done1:
-    "Anyway,my mind aside."
-    
-    mc "Good Morning,Rina-nee."
+    mc "Good Morning, Rina-nee."
     
     r  "Morning,[mc]!"
+
     r  "You’re really early today."
     
-    "*Gives a plate of fried rice*"
+    "*I take the plate of fried rice she offers*"
     
     mc "It's the first day after all."
   
     menu:
-     mc "Actually..."
+        mc "Actually..."
         
-     "Let's go to school together.": #choice 3
+        "Let's go to school together.": # 3
             
-            jump choice3
+            jump sub3 
         
-     "Will you be busy?": #choice 4
+        "Will you be busy?": # 4
             
-            jump choice4
+            jump route2
+label route2:
+    r "Yeah, I forgot. Sorry [mc], I'l be busy today, I've had a lot to after becoming the student council president."
     
-label choice3:
-    r "Hmm,why?"
+    mc "Oh, okay. Guess I will get going now."
+   
+    r "Alright, see you later [mc]."
     
-    jump done2
+    jump route3        
+  
+label route3:
+    
+    #scene street
 
-label done2:
-    
-    menu:
-     mc "Umm..."
-        
-     "Because I want to go to school with you.": #choice 5
-            
-            jump done3
-        
-     "Because you're my sister.": #choice 6
-            
-            jump done3
-        
-label done3:
-    r "*blushes*"
-    
-    m "[mc],stop flirting your sister."
-    
-    mc "Sorry,mom."
-    
-    r "Ehem,I'll go with you today."
-    
-    "YES, I’m with a perfect student!"
-    
-    "Who can face me!?"
-    
-    "I went out after drinking a cup of good, black coffee."
+    "I went out after drinking a good cup of black coffee."
     
     "I will need it after all the things I did last night."
     
-    "Anime,MMO,DOTA,LOL,MONSTER HUNTER!"
+    "Anime, MMO, DOTA, LOL, MONSTER HUNTER!"
     
-    "I will surely need that black coffee."
+    "That black coffee will definitely come in handy."
     
-    #scene
+    "As I went out i saw a petite body with white hair. Her cute face was staring right at me."
     
-    "As I went out to see a petite body with white hair and cute face staring at me."
+    "She waved her small and fragile hand at me with a innocent smile to follow."
     
-    "She waved her small cute hand at me with an innocent smile."
+    s "Good morning, [mc]-nya~"
     
-    mc "Shiro-chan! Bonjour. (Suddenly speaks French)"
+    "Yep, a loli whose age I am not going to tell you guys."
     
-    r "[mc], why are you speaking French? Do you know any other words?"
-    
-    mc "*flustered* I’m still learning! … Maybe."
-
-    r "*Sigh* If you want, I can teach you French."
-    
-    menu:
-        mc "Nah, I'm not interested, because..."
-        
-        "Martial arts all the way!": #choice 7
-            
-            jump choice7
-            
-        "I'll beat Bill Gates!": #choice 8
-        
-            jump choice8
-            
-        "I like to Anime rush.": #choice 9
-    
-            jump choice9
-
-label choice7:
-    s "Eh~"
-    
-    s "[mc], you really did it?"
-    
-    r "I can't overtake [mc] in that part."
-    
-    jump done5
-    
-label choice8:
-    s "Eh~, [mc] you really did it?"
-    
-    mc "Not yet, but I will!"
-    
-    r "Hmm~, how will you beat Bill gates?"
-    
-    mc "By creating a new concept, theory and invention!"
-    
-    s "Is he kidding, Rina-neesan."
-    
-    r "It’s kinda hard but I know [mc] can do it if he wants to!"
-    
-    jump done5
-    
-label choice9:
-    s "Eh~, [mc] you really did it?"
-    
-    mc "Hmph! Of course!"
-    
-    r "I have no doubt about this."
-    
-    mc "Hmph! *Damn proud face*"
-
-    jump done5
-    
-label done5:
-      
-    s "Anyway, can I go to school with you?"
-    
-    mc "*Thinking*"
-    
-    menu:
-        "Let's go!": #choice 10
-            
-            jump choice10
-        
-        "Is it okay?": #choice 11
-            
-            jump choice11
-        
-        "Let's go-nya~": #choice 12
-            
-            jump choice12
-        
-label choice10:
-   s "Let's go!"
-   
-   jump done7
-    
-label choice11:
-    mc "I believe Shiro-chan is an exemplary student. Maybe you forgot something?"
-    
-    jump done8
-    
-label choice12:
-    s " Rawr~ *innocent smile radiating*"
-    
-    jump done7
-    
-label done7:
-    "Rina-nee, Shiro and I went to school."
-    
-    "We parted away after a long happy chat with each other when we arrived at school."
-    
-    jump storyline1
-
-label done8:
-    s "Ah! Sorry [mc]-senpai! I need to give a speech at assembly for the freshmen today!"
-    
-    mc "It's fine."
-    
-    "Shiro was obviously in a hurry when she ran away."
-     
-    r "Well, let's go,[mc]."
-     
-    "after that, we parted away."
-     
-    jump storyline1
-     
-label choice4:
-    r "Yeah,I forgot. Sorry,[mc], I'll be busy today since I have become the student council president."
-    
-    mc "Oh,okay. Guess, gotta go."
-   
-    r "Alright,see you later [mc]."
-    
-    jump done4
-    
-label done4:
-    
-    "I went out after drinking a cup of good black coffee."
-    
-    "I will need it after all the things I did last night."
-    
-    "Anime,MMO,DOTA,LOL,MONSTER HUNTER!"
-    
-    "I will surely need that black coffee."
-    
-    #scene unknown
-    
-    "As I went out to see a petite body with white hair and cute face staring at me."
-    
-    "She waved her small cute hand at me with an innocent smile."
-    
-    s "Good morning,[mc]-nya~"
-    
-    "Yep, a loli whose age I will not tell you guys."
-    
-    "This girl is in the second year of middle school."
+    "This girl is in her second year of middle school."
     
     menu:
         "Good morning, Shiro-chan.": #choice 13
             
-            jump choice13
+            jump sub14
         
         "Good morning, cute kitty.": #choice 14
             
-            jump choice14
+            jump sub15
             
-        "You're cute, be my imouto!": #choice 15
+        "You're cute, be my Imouto!": #choice 15
             
-            jump choice15
+            jump sub16
 
-label choice13:
-    s "*Smile* Morning [mc]-senpai!"
+label sub14:
+    s "*Smiles* Morning [mc]-senpai!"
     
-    jump done6
+    jump route4
 
-label choice14:
-    s "*Blush* Hmm, don't treat me like a kitty! *Still happy being pat*"
+label sub15:
+    s "*Blushes* Hmm, don't treat me like a kitty! *She is still happy to be petted*"
     
-    jump done6
+    jump route4
     
-label choice15:
-    s "*Blush* Umm...No, Rina-neesan gonna get angry."
+label sub16:
+    s "*Blushes* Umm...No, Rina-neesan is gonna get angry if I do."
     
-    jump done6
+    jump route4
     
-label done6:
-    s "Anyway,can I go school with you?"
+label route4:
+    s "Anyway, can I go school with you?"
     
     menu:
-        "Let's go!": #choice 16
+        "Let's go!": 
             
-            jump choice16
+            jump sub17
         
-        "Is it okay?": #choice 17
+        "Is that okay?": 
             
-            jump choice17
+            jump route5
         
-        "Let's go-nya~": #choice 18
+        "Let's go-nya~": 
             
-            jump choice18
+            jump sub18
         
-label choice16:
+label sub17:
    s "Let's go!"
    
-   jump done9
+   jump route6
     
-label choice17:
-    mc "I believe Shiro-chan is an exemplary student. Maybe you forgot something?"
+label route5:
+    mc "I believe Shiro-chan is an exemplary student. Maybe I am forgetting something?"
     
-    jump done10
+    jump route7
     
-label choice18:
-    s " Rawr~ *innocent smile radiating*"
+label sub18:
+    s " Rawr~ *Innocent smile radiating*"
     
-    jump done9
+    jump route6
     
-label done9:
-    "As I went to school, Shiro happily hugged my right arm."
+label route6:
+
+    #scene school
+
+    "As I went to school, Shiro hugged my right arm happily."
     
     "I pet her head softly"
     
-    s "*rub her head at [mc]'s arm affectionately"
+    s "*Rubs her head at [mc]'s arm affectionately*"
     
     "After arriving at school, Shiro and me parted away."
     
-    jump storyline1
+    jump route8
     
-label done10:
+label route7:
     
-     "After arriving there, I stared at the blue sky."
-     
-     jump storyline1
+    #scene blue sky
 
-label storyline1:
-    "I went to the classroom and sat at Main character's usual seat."
+    "After arriving there, I stared up at the blue sky."
+     
+    jump route8
+
+label route8:
+
+    #scene classroom
+
+    "I went to the classroom and sat at the Main character's usual seat."
     
-    "Back on the right side next to the window."
+    "At the Back of the classroom on the right side next to the window."
     
     mc "Hah~"
     
     mc "This is boring..."
     
-    g "Why you sighing? It's still early in the morning."
+    g "Why you sighing? The day just started."
     
     mc "I'm bored, I want to do something!~"
     
@@ -366,61 +206,86 @@ label storyline1:
     mc "Is there any homework?"
     
     a "Nope."
+
+    #scene cafeteria
     
-    ""
+    "..."
+
     "Recess"
     
     "Nothing can beat..."
     
     "Fried noodle bread!"
     
-    "I went to canteen to buy the food."
+    "I went to Cafeteria to go get some."
     
-    "But... If i have to say."
+    "But... If I have to say."
     
     menu:
-        "This is quite good food.":
+        "This is some pretty good food.":
         
-            jump fullalready1
+            jump route9
         
-        "I want Yakiniku Odon.":
-            jump fullalready1
+        "I'd rather have Yakiniku Odon.":
+
+            jump route9
         
         "Just milk is good enough.":
-            jump fullalready1
+
+            jump route9
     
-label fullalready1:
-    "I'm full anyway. I'll buy that thing later."
+label route9:
+    "I'm full right now though, so I'll get some later."
     
     #bell ring
     
     "Welp, the next class started now."
+
+    #scene hallway
+
+    #music
     
     "I ran with full power."
     
-    mc "Welp, the teacher's gonna get angry!!"
+    mc "Geez, teacher's gonna get angry!!"
+
+    a "Hurry [mc]!! Teacher is on the way to class."
+
+    "Teacher is on the way with a stern face"
+
+    mc "Crap! Go go go!!"   
+
+    a "*Nod**Nod* Roger that Sir!"
+
+    "We rushed inside to the class"
+
+    #scene classroom
+
+    "Then the teacher went in"
     
+    mc "Life secured"
+
+    "Terrorists Win... Wait this is not a game."
+
+    "Well never mind that. I should focus on the class right now"
+
     #Insert bell ring
+
+    #music
     
     "The class ended."
     
-    "As I went out with a sigh."
+    "I went out with a sigh."
     
     "I wonder what I should do."
     
-    menu:
-        "Dojo":
-        
-            jump dojo1
-        
-label dojo1:
-    "I went to dojo."
-    
-    #music
+    "Maybe I should visit the dojo."
 
-    #scene
+    "I left to the dojo."
+
+    #scene dojo (school)
     
-    " As I went inside the dojo, which is near to my house I met Amani and Rina-nee inside with an old man."
+    "As I went inside the dojo, which is near to my house, I met Amani and Rina-nee inside with an old man."
     
     r "Hah!"
     
@@ -430,7 +295,7 @@ label dojo1:
     
     "Rina's left fist moved forward fast."
     
-    "Yep,my sister is good at almost everything. Except she doesn't have a boyfriend."
+    "Yep, my sister is good at almost everything. Except she doesn't have a boyfriend."
     
     "Wonder why..."
     
@@ -438,27 +303,27 @@ label dojo1:
     
     mc "Ah, sorry. I had some other things to do."
     
-    r " *laugh* Must be your homework, right?"
+    r "*laughs* Must be your homework, right?"
     
     mc "I..."
     
     "Welp, she's right."
         
-    mc "I forgot to do..."
+    mc "I did forget to do it..."
     
-    r "Do you want me to help~ you?~"
+    r "Do you want me to help you?~"
     
     mc "Umm..."
     
-    d "It's okay, you sister wanted to do it right?~"
+    d "It's okay, your sister wants to do it right?~"
     
     "What the f..."
     
     d "It's okay. You're a mature boy after all. huehuehue."
     
-    "Why is the laugh so lame?"
+    "Why is that laugh so lame?"
     
-    an "Don't remember, she is your only sister!"
+    an "Don't worry, she is your only sister!"
     
     "You mean... st-"
     
@@ -467,79 +332,64 @@ label dojo1:
     "Hmm..."
     
     menu:
-        "Listen to devil of lust.":
+        "Listen to the devil of lust.":
         
-            jump devil1
+            jump bad1
         
-        "Listen to angel of anime (Not sure what the hell does that mean whatever it is)":
+        "Listen to  the angel of anime (Whatever the hell that is)":
         
-            jump angelofwhateverisit1
-        
-label devil1:
-    
-    "Well..."
-    
-    "A strong throw by an expert"
-    
-    "BAM!"
-    
-    "*fly few feet in air before hitting the wooden tiles with a thud."
-    
-    "18+ fatality"
-    
-    "Make sure to not think of this novel as hentai all the time"
-    
-    "Noobegg is here as author! In your face!!! Pervert!!!"
-    
-    r "Are you sure he's fine?"
-    
-    a "Well,i'm not sure. He's still breathing, sooo... *Poke* *Poke*"
-    
-    o "Well, this pervert thought he can go die for all I care."
-    
-    stop music fadeout 3.0
-    return
-    
-label angelofwhateverisit1:
+            jump route11
+   
+label route11:
     "I know she wanted to do something but..."
     
     mc "I will be fine! I mean, even Amani can help me."
    
-    r "oh."
+    r "Oh."
     
-    r "okay... *Dejected*"
+    r "Okay... *Rejected*"
     
-    o "Oh, you came late today. Down to 150."
+    o "Oh, you came late today. Get down and give me a 150."
     
     mc "NANI!?"
     
     o "Just do it!"
+
+    #scene behind dojo (school)
     
-    "At some wall."
+    "Behind the Dojo."
     
-    s "according to keikaku.Fufufu~ *innocent loli aura released*"
+    s "According to keikaku. Fufufu~ *Innocent loli aura released*"
     
     "After quite a while..."
     
-    mc "149...... 15-.... 150.... *fall to ground."
+    mc "149...... 15-.... 150.... *falls to the ground.*"
+
+    #scene blank
     
-    s "Jii-chan![mc] not moving!"
+    s "Jii-chan![mc] isn't moving!"
     
-    o "He will be fine! Maybe..."
+    o "He'll be fine! Probably..."
     
-    s "Uuuu~~ *Started tearing up*"
+    s "Uuuu~~ *Starts to tear up*"
     
-    o "*extreme critical hit received*[s],Grandpa. I’m so sorry! *hug [s]*"
+    o "*Extreme critical hit received*[s],Grandpa. I’m so sorry! *hug [s]*"
     
     s "I hate you!"
     
-    o "*hugs his own legs at some corner* Sorry."
+    o "*Hugs his own legs at some corner* Sorry."
+
+    stop music fadeout 2.5
     
     "After..." 
-    "(Visualist: JUST STOP SKIP DAMMIT!) (K!) (THE FISH)"
-    "(After a long time, the author became retarded and dabbed to all the anime he watched all the time. The end)"
+    "(Visualist: JUST STOP SKIPPING DAMMIT!) (K!) (THE FISH)"
+    "(After a long time, the author became a retard and proceeded to dab while watching anime all day. The end)"
     
-    " After a long time."
+    "After a while I passed out."
+
+    play music audio.t5
+
+    #scene dojo (school)
     
     mc "Hmm... Wh-What happened?"
     
@@ -555,21 +405,25 @@ label angelofwhateverisit1:
     
     o " Go spar with [r]."
     
-    mc "alright."
+    mc "Alright."
     
     r "Will you be okay with your school uniform?"
     
     mc "Of course. I will be fine with the uniform."
+
+    stop music fadeout 2.5
+
+    play music audio.t3
     
-    "I tied out the shirt with a smirk."
+    "I buttoned down the shirt with a smirk."
     
     "Old man Kukichi watched us with anticipation."
     
-    "I moved to middle grounds facing Rina."
+    "I moved to the middle ground to come face to face with Rina."
     
     mc "Rina-nee, you move first."
     
-    r "Well,don't regret it!"
+    r "Well, you'll regret that!"
     
     "*Fush*"
     
@@ -577,11 +431,11 @@ label angelofwhateverisit1:
     
     "A right fast jab appeared."
     
-    "I moved my head to the right side in order to avoid the jab."
+    "I leaned my head to the right side in order to avoid the jab"
         
-    "Rina swang left hand aiming [mc]'s stomach"
+    "Rina swung her left fist aiming at [mc]'s stomach"
     
-    "I moved my hand stop her swing and uppercutted with my other hand targetting Rina-nee."
+    "I moved my hand to stop her swing and proceeded with a uppercut with my other hand"
     
     "Rina jumped back while her right hand blocked the uppercut."
     
@@ -593,25 +447,29 @@ label angelofwhateverisit1:
      
     "I jumped in the air but Rina swang her hand straight to my face."
      
-    "I moved my head few breaths earlier than her before I landed on the ground."
+    "I moved my head a few breaths earlier than her, then I landed on the ground."
      
-    "I instinctively hold her karate's uniform and throw her in the air with a perfect fluid movement."
+    "I instinctively grabbed her karate uniform and threw her in air with a perfect fluid movement."
      
     "Rina flew in the air before landing with a thud."
      
+    stop music fadeout 2.5
+
     r "*rubs head* Ouch! That hurts!"
-     
-    mc "A moment hesistation equal a moment live fly away."
+
+    play music audio.t5
+
+    mc "A moment of hesistation is the same as giving your life up."
      
     o "Hahahaha! As expected of [mc]! I have great expectations for your future in martial arts."
      
-    mc "Of course!. *ready both hands on side and breath in and exhale lightly*"
+    mc "Of course! *ready both hands on side and breaths in and exhales lightly*"
     
     a "Splendid as always,[mc]!"
      
     s "Yeah!"
      
-    a "Seeing Rina couldn't contend with you meaning she is not as perfect as she seems to be."
+    a "Seeing Rina couldn't contend with you shows she is not as perfect as she seems to be."
      
     r "Rude!"
      
@@ -619,9 +477,9 @@ label angelofwhateverisit1:
      
     "I laughed with them."
      
-     #Scene unknown
-     
     "I return home sluggishly."
+
+    #scene home (inside)
      
     r "Are you okay?"
      
@@ -632,6 +490,8 @@ label angelofwhateverisit1:
     mc "Of course. *smile*"
      
     "I went inside my room."
+
+    #scene bedroom (mc)
      
     "Suddenly, my phone rings."
      
@@ -639,7 +499,7 @@ label angelofwhateverisit1:
      
     mc "Ah..."
      
-    "I replied and went to bath after that."
+    "I replied and took a bath after that."
     
     "I replied to Ellyn, my internet bestfriend."
      
@@ -652,19 +512,10 @@ label angelofwhateverisit1:
     "I closed my phone and went to sleep."
     
     "It was a busy day..."
+
+    #scene blank
     
     "..."
     
-    "I'm Noobegg. New author for this story and new member of group."
-    
-    "Please take care of me."
-    
     stop music fadeout 3.0
     return
-                                                                                                     
-    
-        
-                                                           
-                                                           
-               
-               
