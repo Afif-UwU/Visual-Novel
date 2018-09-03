@@ -12,7 +12,7 @@ label ch1:
     
     "I woke up with a yawn"
     
-    "It’s gonna be boring a year."
+    "It’s gonna be a boring year."
      
     "Alone... I wonder when my waifu will be alive"
     
@@ -22,7 +22,7 @@ label ch1:
     
     "I went out with my everyday school uniform."
     
-    "I stared at my room, looks like my collection of anime and vocaloids is good enough for bragging."
+    "I stared at my room, it looks like my collection of anime and vocaloids is good enough for bragging."
     
     "I shook my head before combing my hair."
 
@@ -42,7 +42,7 @@ label ch1:
             
             jump sub1
         
-        "Who PUT THAT OTHER CHOICE!": # 2
+        "Whose IDEA WAS IT TO PUT THAT OTHER CHOICE THERE": # 2
             
             jump route1
   
@@ -251,7 +251,7 @@ label route9:
 
     a "Hurry [mc]!! Teacher is on the way to class."
 
-    c "Teacher is on the way with a stern face"
+    "Teacher is on the way with a stern face"
 
     mc "Crap! Go go go!!"   
 
@@ -270,6 +270,8 @@ label route9:
     "Well never mind that. I should focus on the class right now"
 
     #Insert bell ring
+
+    #music
     
     "The class ended."
     
@@ -280,8 +282,6 @@ label route9:
     "Maybe I should visit the dojo."
 
     "I left to the dojo."
-    
-    #music
 
     #scene dojo (school)
     
@@ -379,7 +379,7 @@ label route11:
     
     o "*Hugs his own legs at some corner* Sorry."
 
-    stop music fadeout 5.0
+    stop music fadeout 2.5
     
     "After..." 
     "(Visualist: JUST STOP SKIPPING DAMMIT!) (K!) (THE FISH)"
@@ -411,7 +411,9 @@ label route11:
     
     mc "Of course. I will be fine with the uniform."
 
-    #music 
+    stop music fadeout 2.5
+
+    play music audio.t3
     
     "I buttoned down the shirt with a smirk."
     
@@ -451,8 +453,12 @@ label route11:
      
     "Rina flew in air before landing with a thud."
      
+    stop music fadeout 2.5
+
     r "*rubs head* Ouch! That hurts!"
-     
+
+    play music audio.t5
+
     mc "A moment of hesistation is the same as giving your life up."
      
     o "Hahahaha! As expected of [mc]! I have great expectations for your future in martial arts."

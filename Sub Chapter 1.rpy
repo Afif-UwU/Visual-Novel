@@ -184,7 +184,7 @@ label bad1:
 
     #scene blank
 
-    stop music fadeout 5.0
+    stop music fadeout 2.5
     
     "BAM!"
     
