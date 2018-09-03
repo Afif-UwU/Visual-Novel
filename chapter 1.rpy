@@ -10,7 +10,7 @@ label ch1:
     
     "I woke up with a yawn"
     
-    "It’s gonna be boring a year."
+    "It’s gonna be a boring year."
     
     "Alone... I wonder when my waifu will be alive"
     
@@ -20,7 +20,7 @@ label ch1:
     
     "I went out with my everyday school uniform."
     
-    "I stared at my room,looks like my collection of anime and vocaloids is good enough for bragging."
+    "I stared at my room, it looks like my collection of anime and vocaloids is good enough for bragging."
     
     "I shook my head before combing my hair"
     
@@ -38,7 +38,7 @@ label ch1:
             
             jump retard1
         
-        "Whose IDEA PUT THAT OTHER CHOICE.": #choice 2
+        "Whose IDEA WAS IT TO PUT THAT OTHER CHOICE THERE?": #choice 2
             
             jump notretard1
             
@@ -65,7 +65,7 @@ label done1:
     r  "Morning,[mc]!"
     r  "You’re really early today."
     
-    "*Give a plate of fried rice*"
+    "*Gives a plate of fried rice*"
     
     mc "It's the first day after all."
   
@@ -123,9 +123,9 @@ label done3:
     
     "As I went out to see a petite body with white hair and cute face staring at me."
     
-    "She waved her small cute hand at me with innocent smile."
+    "She waved her small cute hand at me with an innocent smile."
     
-    mc "Shiro-chan! Bonjour. (Suddenly speak French)"
+    mc "Shiro-chan! Bonjour. (Suddenly speaks French)"
     
     r "[mc], why are you speaking French? Do you know any other words?"
     
@@ -134,7 +134,7 @@ label done3:
     r "*Sigh* If you want, I can teach you French."
     
     menu:
-        mc "Not interested, because..."
+        mc "Nah, I'm not interested, because..."
         
         "Martial arts all the way!": #choice 7
             
@@ -218,18 +218,18 @@ label choice12:
     jump done7
     
 label done7:
-    "Rina-nee, Shiro and me went to school."
+    "Rina-nee, Shiro and I went to school."
     
-    "We parted away after a long happy chat with each other on school."
+    "We parted away after a long happy chat with each other when we arrived at school."
     
     jump storyline1
 
 label done8:
-    s "Ah! Sorry [mc]-senpai! I need to give a speech at assembly for freshmen today!"
+    s "Ah! Sorry [mc]-senpai! I need to give a speech at assembly for the freshmen today!"
     
     mc "It's fine."
     
-    "Shiro ran in hurry."
+    "Shiro was obviously in a hurry when she ran away."
      
     r "Well, let's go,[mc]."
      
@@ -260,16 +260,16 @@ label done4:
     
     "As I went out to see a petite body with white hair and cute face staring at me."
     
-    "She waved her small cute hand at me with innocent smile."
+    "She waved her small cute hand at me with an innocent smile."
     
     s "Good morning,[mc]-nya~"
     
     "Yep, a loli whose age I will not tell you guys."
     
-    "This girl is second years of middle school."
+    "This girl is in the second year of middle school."
     
     menu:
-        "good morning, Shiro-chan.": #choice 13
+        "Good morning, Shiro-chan.": #choice 13
             
             jump choice13
         
@@ -328,13 +328,13 @@ label choice18:
     jump done9
     
 label done9:
-    "As I went to school, Shiro hugged my right arm happily."
+    "As I went to school, Shiro happily hugged my right arm."
     
     "I pet her head softly"
     
     s "*rub her head at [mc]'s arm affectionately"
     
-    "After arrived there, Shiro and me parted away."
+    "After arriving at school, Shiro and me parted away."
     
     jump storyline1
     
@@ -355,7 +355,7 @@ label storyline1:
     
     g "Why you sighing? It's still early in the morning."
     
-    mc "I'm bored, i want to do something!~"
+    mc "I'm bored, I want to do something!~"
     
     g "Well, suit yourself."
     
@@ -396,9 +396,9 @@ label fullalready1:
     
     "Welp, the next class started now."
     
-    "I ran with full strength."
+    "I ran with full power."
     
-    mc "Welp, teacher's gonna get angry!!"
+    mc "Welp, the teacher's gonna get angry!!"
     
     #Insert bell ring
     
@@ -420,7 +420,7 @@ label dojo1:
 
     #scene
     
-    " As i went inside the dojo, which is near to my house I met Amani and Rina-nee inside with an old man."
+    " As I went inside the dojo, which is near to my house I met Amani and Rina-nee inside with an old man."
     
     r "Hah!"
     
@@ -454,7 +454,7 @@ label dojo1:
     
     "What the f..."
     
-    d "It's okay you're a mature boy after all. huehuehue."
+    d "It's okay. You're a mature boy after all. huehuehue."
     
     "Why is the laugh so lame?"
     
@@ -483,17 +483,17 @@ label devil1:
     
     "BAM!"
     
-    "*fly few feet in air before hit the wooden tiles with a thud."
+    "*fly few feet in air before hitting the wooden tiles with a thud."
     
     "18+ fatality"
     
-    "Make sure to not think this novel as hentai all the time"
+    "Make sure to not think of this novel as hentai all the time"
     
     "Noobegg is here as author! In your face!!! Pervert!!!"
     
     r "Are you sure he's fine?"
     
-    a "well,i'm not sure. He's still breathing... *Poke* *Poke*"
+    a "Well,i'm not sure. He's still breathing, sooo... *Poke* *Poke*"
     
     o "Well, this pervert thought he can go die for all I care."
     
@@ -515,11 +515,11 @@ label angelofwhateverisit1:
     
     o "Just do it!"
     
-    "at some wall."
+    "At some wall."
     
     s "according to keikaku.Fufufu~ *innocent loli aura released*"
     
-    "After quite while..."
+    "After quite a while..."
     
     mc "149...... 15-.... 150.... *fall to ground."
     
@@ -531,23 +531,23 @@ label angelofwhateverisit1:
     
     o "*extreme critical hit received*[s],Grandpa. I’m so sorry! *hug [s]*"
     
-    s "I Hate you!"
+    s "I hate you!"
     
     o "*hugs his own legs at some corner* Sorry."
     
     "After..." 
     "(Visualist: JUST STOP SKIP DAMMIT!) (K!) (THE FISH)"
-    "(After a long time, the author become retard and do dab all the anime he watched all the time. The end)"
+    "(After a long time, the author became retarded and dabbed to all the anime he watched all the time. The end)"
     
     " After a long time."
     
-    mc "Hmm... What happened?"
+    mc "Hmm... Wh-What happened?"
     
     s "Hmm? Oh you're tired... So... *Fidget* *fidget*"
     
     mc "Hmm.... Ah, the pillow lap is good though."
     
-    s "*Blush* Is i-it good?"
+    s "*Blush* I-is it good?"
     
     mc "Yup."
     
@@ -573,17 +573,17 @@ label angelofwhateverisit1:
     
     "*Fush*"
     
-    "fast!"
+    "Fast!"
     
     "A right fast jab appeared."
     
-    "I moved my head to side avoid the jab."
+    "I moved my head to the right side in order to avoid the jab."
         
     "Rina swang left hand aiming [mc]'s stomach"
     
-    "I moved my hand stop her swing and uppercut with my other hand targeting Rina-nee."
+    "I moved my hand stop her swing and uppercutted with my other hand targetting Rina-nee."
     
-    "Rina jumped back while her right hand block the uppercut."
+    "Rina jumped back while her right hand blocked the uppercut."
     
     r "You're still like a demon as usual."
     
@@ -595,9 +595,9 @@ label angelofwhateverisit1:
      
     "I moved my head few breaths earlier than her before I landed on the ground."
      
-    "I instinctively hold her karate's uniform and throw her in air with a perfect fluid movement."
+    "I instinctively hold her karate's uniform and throw her in the air with a perfect fluid movement."
      
-    "Rina flew in air before landing with a thud."
+    "Rina flew in the air before landing with a thud."
      
     r "*rubs head* Ouch! That hurts!"
      
