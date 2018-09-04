@@ -8,7 +8,7 @@ label ch1:
     
     $ mc = mc.strip()
 
-    #scene mc bedroom
+    scene bg bedroom1
     
     "I woke up with a yawn"
     
@@ -25,6 +25,8 @@ label ch1:
     "I stared at my room, it looks like my collection of anime and vocaloids is good enough for bragging."
     
     "I shook my head before combing my hair."
+
+    scene black
 
     #scene dinning room (mc home)
     

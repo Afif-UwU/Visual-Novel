@@ -23,3 +23,7 @@ define audio.t4 ="audio/audio.mp3" #normal epic theme
 define audio.t5 ="audio/Everyday morning.mp3" #In game theme
 define audio.t6 ="audio/In The End You Were There.mp3" #main menu theme
 define audio.t7 ="audio/Cristallized Silver.mp3" #main menu theme 2
+
+#background pic
+
+image bg bedroom1 = "images/bedroom(mc).jpg"
